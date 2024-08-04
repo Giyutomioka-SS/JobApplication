@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#A020F0</color>
+    <color name="primaryLightColor">#6FCCDC</color>
+    <color name="primaryDarkColor">#FEE4E9</color>
+    <color name="secondaryColor">#EC224E</color>
+    <color name="secondaryLightColor">#EC224E</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#ffffff</color>
+    <color name="greyTextColor">#949494</color>
+    <color name="errorColor">#D32F2F</color>
+    <color name="disabledTextColor">#99ffffff</color>
+
+    <color name="pale_cornflower_blue">#B2D0ED</color>
+    <color name="golden">#FAC213</color>
+    <color name="stroke_color">#D4D4D4</color>
+    <color name="light_gray">#F2F2F2</color>
+    <color name="gunmetal">#404969</color>
+    <color name="shimmer_background">#DDDDDD</color>
+    <color name="pale_gray">#FBFBFB</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_green">#29AA3C</color>
+    <color name="color_purple">#A020F0</color>
+
+    <color name="pink_red_very_light_shade">#FDECF0</color>
+    <color name="yellow_very_light_shade">#FFF1CB</color>
+    <color name="blue_very_light_shade">#F3F7FF</color>
+    <color name="light_shade_purple">#dec4fc</color>
+    <color name="purple_very_light_shade">#efe4fd</color>
+    <color name="blue_light_shade">#F0F7FF</color>
+    <color name="primary_50">#FEE4E9</color>
+    <color name="primary_200">#FFD5DD</color>
+
+    <color name="regal_blue">#1C3E4D</color>
+    <color name="new_blue">#156CF7</color>
+    <color name="new_filled_color">#F6F7F9</color>
+    <color name="text_color">#191C1A</color>
+    <color name="text_color_grey">#535353</color>
+    <color name="text_color_grey_light">#454545</color>
+
+    <color name="shimmer_background_color">@color/text_color_grey</color>
+    <color name="screen_color_primary">#FAFAFA</color>
+    <color name="screen_color_secondary">#F0F7FF</color>
+    <color name="card_stroke_pink">#FFDCE4</color>
+</resources>

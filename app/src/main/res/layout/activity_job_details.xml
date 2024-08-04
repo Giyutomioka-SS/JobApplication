@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_very_light_shade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.JobDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/job_details"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/screen_color_primary"
+                    app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp"
+                            android:paddingBottom="5dp"
+                            android:background="@color/screen_color_primary">
+
+                                <ImageView
+                                    android:id="@+id/imageViewJob"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerInside" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingVertical="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textViewTitle"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            tools:text="Job Title"
+                                            android:textStyle="bold"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:maxLines="4"
+                                            android:ellipsize="end"/>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_height="1dp"
+                                    android:background="@android:color/darker_gray"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingHorizontal="5dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:orientation="horizontal"
+                                            android:baselineAligned="false">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="start"
+                                                    android:padding="10dp"
+                                                    android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="12sp"
+                                                            android:text="@string/company_name"
+                                                            android:maxLines="1"
+                                                            android:textAllCaps="true"
+                                                            android:ellipsize="end"
+                                                            android:textColor="@android:color/darker_gray"/>
+
+                                                        <TextView
+                                                            android:id="@+id/textViewCompanyName"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="13sp"
+                                                            android:textStyle="bold"
+                                                            tools:text="Company"
+                                                            android:maxLines="4"
+                                                            android:ellipsize="end"/>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:padding="10dp"
+                                                    android:gravity="end"
+                                                    android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="12sp"
+                                                            android:text="@string/location_capital"
+                                                            android:maxLines="1"
+                                                            android:ellipsize="end"
+                                                            android:textColor="@android:color/darker_gray"/>
+
+                                                        <TextView
+                                                            android:id="@+id/textViewLocation"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="13sp"
+                                                            tools:text="Place"
+                                                            android:textStyle="bold"
+                                                            android:maxLines="4"
+                                                            android:ellipsize="end"/>
+
+                                                </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:orientation="horizontal"
+                                            android:baselineAligned="false">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="start"
+                                                    android:padding="10dp"
+                                                    android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="12sp"
+                                                            android:text="@string/job_type"
+                                                            android:textAllCaps="true"
+                                                            android:maxLines="1"
+                                                            android:ellipsize="end"
+                                                            android:textColor="@android:color/darker_gray"/>
+
+                                                        <TextView
+                                                            android:id="@+id/textViewJobType"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="13sp"
+                                                            tools:text="Type"
+                                                            android:textStyle="bold"
+                                                            android:maxLines="4"
+                                                            android:ellipsize="end"/>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:padding="10dp"
+                                                    android:gravity="end"
+                                                    android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="12sp"
+                                                            android:text="@string/experience"
+                                                            android:maxLines="1"
+                                                            android:textAllCaps="true"
+                                                            android:ellipsize="end"
+                                                            android:textColor="@android:color/darker_gray"/>
+
+                                                        <TextView
+                                                            android:id="@+id/textViewExperience"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="13sp"
+                                                            android:textStyle="bold"
+                                                            tools:text="Less than 1 year"
+                                                            android:maxLines="4"
+                                                            android:ellipsize="end"/>
+
+                                                </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginVertical="5dp"
+                                            android:orientation="horizontal"
+                                            android:baselineAligned="false">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="start"
+                                                    android:padding="10dp"
+                                                    android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="12sp"
+                                                            android:text="@string/qualification"
+                                                            android:maxLines="1"
+                                                            android:textAllCaps="true"
+                                                            android:ellipsize="end"
+                                                            android:textColor="@android:color/darker_gray"/>
+
+                                                        <TextView
+                                                            android:id="@+id/textViewQualification"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="13sp"
+                                                            android:textStyle="bold"
+                                                            tools:text="Not Required"
+                                                            android:maxLines="4"
+                                                            android:ellipsize="end"/>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:gravity="end"
+                                                    android:padding="10dp"
+                                                    android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="12sp"
+                                                            android:text="@string/salary_capital"
+                                                            android:maxLines="4"
+                                                            android:ellipsize="end"
+                                                            android:textColor="@android:color/darker_gray"/>
+
+                                                        <TextView
+                                                            android:id="@+id/textViewSalary"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textSize="13sp"
+                                                            android:textStyle="bold"
+                                                            tools:text= "₹18000 - ₹25000+"
+                                                            android:maxLines="1"
+                                                            android:ellipsize="end" />
+
+                                                </LinearLayout>
+
+                                        </LinearLayout>
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="@string/call_hr"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/buttonWhatsApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/whatsapp"
+                    android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonAddJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:onClick="onSaveJob"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/bookmark_plus" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonRemoveJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:onClick="onRemoveJob"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/bookmark_minus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">lokaltask</string>
+    <string name="job_title">JOB TITLE</string>
+    <string name="location">Location</string>
+    <string name="salary">Salary:</string>
+    <string name="phone">Mobile No</string>
+    <string name="jobs">Jobs</string>
+    <string name="bookmarks">Bookmark</string>
+    <string name="no_data_available">No data available</string>
+    <string name="no_jobs_saved_yet">No Jobs Saved Yet!</string>
+    <string name="job_details">Job Details</string>
+    <string name="company_name">Company Name</string>
+    <string name="job_type">Job Type</string>
+    <string name="experience">Experience</string>
+    <string name="qualification">Qualification</string>
+    <string name="salary_capital">SALARY</string>
+    <string name="location_capital">LOCATION</string>
+    <string name="call_hr">☎ Call</string>
+    <string name="whatsapp">💭 WhatsApp</string>
+</resources>
